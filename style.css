@@ -1,0 +1,248 @@
+* {
+	padding:0;
+	margin:0;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+.medsos {
+	padding: 10px;
+	background-color: #E8AA42;
+}
+.medsos ul li {
+	display: inline-block;
+	color: #fff;
+	margin-right: 10px;
+}
+.container {
+	width:80%;
+	margin:0 auto;
+	height: fit-content;
+	font-size: larger;
+}
+.container:after {
+	content:'';
+	display: block;
+	clear: both;
+}
+.button {
+    display: grid;
+    outline: 0;
+    cursor: pointer;
+    border: 2px solid #000 var(--clr);
+    border-radius: 3px;
+    color: #fff;
+    background: #148F77;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 20px;
+    text-align:center;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+	align-content: center;
+	clear: both;
+	margin: 0 auto;
+	place-items: center;
+	justify-content: center;
+	height: center;
+}
+.button:hover {
+    color: #000;
+    background: rgb(255, 218, 87);
+}
+
+.btn {
+
+	display: grid;
+	outline: 0;
+	border: 0;
+	cursor: pointer;
+	transition: box-shadow 0.15s ease,transform 0.15s ease;
+	will-change: box-shadow,transform;
+	background: gray;
+	box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+	height: 48px;
+	padding: 0 32px;
+	font-size: 18px;
+	border-radius: 6px;
+	color: #36395a;
+	transition: box-shadow 0.15s ease,transform 0.15s ease;
+	align-items: center;
+	clear: both;
+	align-content: center;
+	justify-content: center;
+	height: center;
+	place-items: center;
+	margin: 0 auto;
+}
+.btn:hover {
+		box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #d6d6e7;
+		transform: translateY(-2px);
+	}
+.btn:active{
+		box-shadow: inset 0px 3px 7px #d6d6e7;
+		transform: translateY(2px);
+	}
+	
+header h1 {
+	float: left;
+	padding:15px 0;
+	color: #E8AA42;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	display: inline-block;
+}
+header ul li a {
+	padding:25px 20px;
+	display: inline-block;
+}
+header ul li a:hover {
+	background-color: #148F77;
+	color: #fff;
+}
+.active {
+	background-color: #E8AA42;
+	color: #fff;
+}
+.banner {
+	height: 80vh;
+	background-image: url(logo\(2\).jpg);
+    background-position: center;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.banner:after {
+	content:'';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.banner h2 {
+	color: #fff;
+	z-index: 1;
+	padding: 20px 25px;
+	border:3px solid #fff;
+}
+section {
+	padding:50px 0;
+}
+section h3 {
+	text-align: center;
+	padding:20px 0;
+	color: #148F77;
+	margin-bottom: 25px;
+	font-size: 50px;
+}
+.about {}
+
+.service {
+	padding-bottom: 100px;
+}
+.about p {
+	color: #666;
+	word-spacing: 2px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.service {
+	background-color: #f9f9f9;
+}
+.box {
+	color: #148F77;
+}
+.box:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.box .col-4 {
+	width:100%;
+	padding:20px;
+	box-sizing: border-box;
+	text-align: center;
+	float: left;
+	font-size: larger;
+}
+.icon {
+	width:70px;
+	height:70px;
+	border:1px solid;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+	margin:0 auto;
+}
+.box .col-4 h4 {
+	margin:20px 0;
+}
+footer {
+	padding:30px 0;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+}
+.bg-loader {
+	background-color: #eee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-loader .loader {
+	width:100px;
+	height: 100px;
+	border:3px solid #fff;
+	border-radius: 50%;
+	border-top-color: #148F77;
+	border-right-color: #148F77;
+	border-bottom-color: #148F77;
+	animation: puterin .8s linear infinite;
+}
+.label {
+	background-color: #E8AA42;
+	color: #fff;
+}
+@keyframes puterin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@media screen and (max-width: 768px){
+	.container {
+		width:90%;
+	}
+	header h1 {
+		text-align: center;
+		float: none;
+	}
+	header ul {
+		text-align: center;
+		float: none;
+	}
+	.box .col-4 {
+		width:100%;
+		float: none;
+		margin-bottom: 20px;
+	}
+}
+
+                
